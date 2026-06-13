@@ -1,0 +1,366 @@
+---
+Title: "The Race to the Atom: Moore's Law and How Transistors Shrunk Over the Decades"
+Theme: "Historical Computing"
+Members:
+  - "Balila, Dale Vernard R."
+  - "Batua, Jasim B."
+  - "Calderon, John Gabriel V."
+  - "Meija, Diego C."
+  - "Chuanico, Josh M."
+
+GitHub Repository:
+  - "To be submitted in the next iteration"
+---
+
+# The Race to the Atom: Moore's Law and How Transistors Shrunk Over the Decades
+
+## Topic Theme
+Historical Computing
+
+## Overview
+
+This exhibit explores the history of transistor miniaturization and how Moore's Law described the rapid growth of computing power throughout the semiconductor age.
+
+Beginning with the invention of the transistor in 1947, visitors will follow the progression of semiconductor technology through integrated circuits, VLSI systems, and modern nanometer-scale processors. The exhibit demonstrates how shrinking transistors enabled faster, smaller, and more powerful computers while also examining the engineering challenges faced as transistor dimensions approached atomic scales.
+
+Rather than focusing solely on Moore's Law, the exhibit uses Moore's Law as a guiding narrative to explain the evolution of transistor technology and its impact on modern computing.
+
+---
+
+# What This Exhibit Covers
+
+## Foundations of Modern Electronics
+
+- What is a transistor?
+- Why did transistors replace vacuum tubes?
+- How do transistors function as electronic switches?
+
+## Moore's Law
+
+- Who proposed Moore's Law?
+- What did Moore's Law predict?
+- How accurate was the prediction over time?
+
+## The Evolution of Semiconductor Technology
+
+- Point-Contact Transistors
+- Bipolar Junction Transistors
+- Integrated Circuits (ICs)
+- Very Large Scale Integration (VLSI)
+- Microprocessors
+- Modern FinFET and Gate-All-Around Technologies
+
+## Engineering Challenges
+
+- Heat generation
+- Power consumption
+- Quantum tunneling
+- Manufacturing complexity
+- Economic limitations
+
+## Beyond Moore's Law
+
+- Chiplets
+- 3D Chip Stacking
+- Quantum Computing
+- Photonic Computing
+
+---
+
+# Interactive Exhibit Overview
+
+The exhibit will feature multiple interactive components designed to help visitors understand both the historical progression and technical challenges of transistor miniaturization.
+
+---
+
+## Interactive Component 1: Semiconductor Evolution Timeline
+
+### Description
+
+An interactive timeline showcasing major milestones in semiconductor history.
+
+Visitors can navigate through different decades and select important events to reveal detailed information.
+
+### Timeline Entries
+
+- 1947 — Point-Contact Transistor
+- 1958 — Integrated Circuit
+- 1971 — Intel 4004
+- 1982 — 1.5 μm Manufacturing Process
+- 1995 — 350 nm Manufacturing Process
+- 2004 — 90 nm Manufacturing Process
+- 2011 — 22 nm FinFET
+- 2020 — 5 nm Process Nodes
+- Present Day — 3 nm and Beyond
+
+### User Interaction
+
+When a milestone is selected:
+
+- Historical information appears
+- Images and diagrams are displayed
+- Transistor count information is shown
+- Semiconductor process size is highlighted
+- Historical significance is explained
+
+### Technologies
+
+- React
+- Astro
+- CSS Animations
+
+---
+
+## Interactive Component 2: Moore's Law Growth Simulator
+
+### Description
+
+A dynamic visualization demonstrating how transistor counts increased over time according to Moore's Law.
+
+### User Interaction
+
+Visitors can move a timeline slider between 1971 and the present.
+
+As the slider moves:
+
+- Transistor count updates
+- Process node size updates
+- Computing power comparison updates
+- Graph visualization changes in real time
+
+### Educational Goal
+
+Allow users to visualize exponential growth and understand why Moore's Law became one of the most influential observations in computing history.
+
+### Technologies
+
+- React
+- Chart.js
+- Astro
+
+---
+
+## Interactive Component 3: How Small Is a Transistor?
+
+### Description
+
+An interactive scale comparison that helps visitors visualize modern transistor sizes.
+
+### User Interaction
+
+Visitors can compare transistor sizes against:
+
+- Human Hair
+- Grain of Sand
+- Red Blood Cell
+- Virus
+- DNA Strand
+- Modern 3 nm Transistor
+
+Users can zoom in and out to see relative size differences.
+
+### Educational Goal
+
+Provide intuitive understanding of how small modern transistors have become.
+
+### Technologies
+
+- React
+- CSS Transformations
+- SVG Graphics
+
+---
+
+## Interactive Component 4: The Limits of Moore's Law
+
+### Description
+
+An interactive engineering challenge simulator.
+
+### User Interaction
+
+Visitors attempt to continue shrinking transistor sizes while balancing:
+
+- Performance
+- Power Consumption
+- Heat Production
+- Manufacturing Cost
+
+The simulator demonstrates the physical and economic barriers faced by semiconductor engineers.
+
+### Educational Goal
+
+Show why transistor scaling becomes increasingly difficult as dimensions approach atomic scales.
+
+### Technologies
+
+- React
+- State Management
+- Dynamic Data Visualization
+
+---
+
+# Technical Stack Plan
+
+| Technology | Purpose |
+|------------|---------|
+| Astro 6 | Main Website Framework |
+| React | Interactive Components |
+| MDX | Exhibit Content Pages |
+| Node.js 26 | Development Environment |
+| GitHub | Version Control and Documentation |
+| GitHub Pages | Deployment |
+| Chart.js | Data Visualization |
+| CSS Animations | Interactive Effects |
+| SVG Graphics | Scalable Diagrams and Visualizations |
+
+---
+
+# Mobile Responsiveness Plan
+
+The exhibit will be designed with responsive layouts to support desktop, tablet, and mobile devices.
+
+Features include:
+
+- Responsive Grid Layouts
+- Adaptive Typography
+- Mobile-Friendly Navigation
+- Touch-Compatible Interactive Components
+- Optimized Image Loading
+
+---
+
+# Tentative Style Guide Snapshot
+
+## Design Theme
+
+Futuristic Technology Museum
+
+---
+
+## Color Palette
+
+### Primary
+
+Deep Navy
+
+```
+#0A192F
+```
+
+### Secondary
+
+Silicon Blue
+
+```
+#2563EB
+```
+
+### Accent
+
+Neon Cyan
+
+```
+#06B6D4
+```
+
+### Background
+
+Near Black
+
+```
+#020617
+```
+
+---
+
+## Typography
+
+### Headings
+
+Orbitron
+
+### Body Text
+
+Inter
+
+### Technical Labels
+
+JetBrains Mono
+
+---
+
+## Visual Design Principles
+
+- Dark-mode museum aesthetic
+- Semiconductor-inspired visuals
+- Circuit-board motifs
+- Interactive data panels
+- Smooth scrolling transitions
+- Consistent spacing and layout hierarchy
+
+---
+
+## Page Layout Structure
+
+### Homepage
+
+- Hero Banner
+- Topic Introduction
+- Quick Navigation
+
+### Section 1
+
+- Introduction to Transistors
+
+### Section 2
+
+- Moore's Law
+
+### Section 3
+
+- Semiconductor Evolution Timeline
+
+### Section 4
+
+- Moore's Law Simulator
+
+### Section 5
+
+- Transistor Size Comparison
+
+### Section 6
+
+- Limits of Moore's Law
+
+### Section 7
+
+- Future Technologies
+
+### Section 8
+
+- References
+
+---
+
+# Proposed Repository Structure
+
+```text
+src/
+├── components/
+│   ├── Timeline.jsx
+│   ├── MooreLawSimulator.jsx
+│   ├── TransistorScaleViewer.jsx
+│   ├── LimitsSimulator.jsx
+│   └── FactCard.jsx
+│
+├── layouts/
+│   └── ExhibitLayout.astro
+│
+└── pages/
+    └── race_to_atom.mdx
+```
+
+# Project Goal
+
+To create an engaging and educational virtual museum exhibit that demonstrates how transistor miniaturization transformed computing, illustrates the influence of Moore's Law, and explores the technological limits that define the future of semiconductor innovation.

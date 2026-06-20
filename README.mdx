@@ -1,114 +1,109 @@
 ---
-Title: "The Race to Remember: How Computer Storage Evolved from Punch Cards to the Cloud"
-Theme: "Historical Computing"
+
+Title: "Computing in the Philippines: Local Technology History"
+Theme: "Local Technology History"
 Members:
-  - "Balila, Dale Vernard R."
-  - "Batua, Jasim B."
-  - "Calderon, John Gabriel V."
-  - "Meija, Diego C."
-  - "Chuanico, Josh M."
+
+* "Balila, Dale Vernard R."
+* "Batua, Jasim B."
+* "Calderon, John Gabriel V."
+* "Meija, Diego C."
+* "Chuanico, Josh M."
+
 ---
 
-# The Race to Remember: How Computer Storage Evolved from Punch Cards to the Cloud
+# Computing in the Philippines: Local Technology History
 
-This exhibit explores the evolution of computer storage technologies, starting with punch cards and magnetic tape systems and progressing to modern day solid-state drives and cloud storage platforms.
+This exhibit delves into the history and evolution of computing technology in the Philippines, tracing its journey from its early beginnings to the present day. Through an interactive timeline and map, visitors will discover the key milestones, organizations, and technological advancements that contributed to the growth of the Philippine technology sector.
 
-Discover how the increasing demand for data storage drove innovations in capacity, speed, portability, and reliability. The exhibit highlights how storage devices evolved from room-sized systems capable of storing only a few kilobytes to modern technologies that store terabytes of information in devices that fit in a pocket.
+The exhibit will highlight how computing evolved from a limited resource used by government agencies, universities, and large businesses into a nationwide success with the country's software development, internet services, and other emerging technologies.
 
 ### Exhibit Roadmap
 
-- **General introduction** to computer storage and why it is important.
-- **The history of computer storage**
-  - How early computers stored information.
-  - How storage capacity increased over time.
-  - The technologies that replaced previous storage mediums, and why.
-  - How modern storage devices such as SSDs work.
-  - Cloud storage, and where data actually stored.
-- **Future challenges** that upcoming storage technologies will face.
+* **The Early Years of Computing (1960s–1980s)**
+* **The Birth of the Philippine Internet (1990s)**
+
+  * PHNET and the country's first internet connection
+* **The Expansion of Technology Across the Country (2000s)**
+
+  * Growth of internet access and digital infrastructure
+* **The Rise of the IT Industry**
+* **Local Innovations and Digital Services**
+
+  * Filipino technology companies, startups, and digital services
+* **Role of Universities, Research Institutions, and Government Agencies**
 
 ---
 
 ## Interactive Elements
 
-### 1. Interactive Storage Timeline
-An interactive timeline that presents major milestones in the history of computer storage. Explore the progression from punch cards and magnetic tape systems to floppy disks, hard drives, solid-state drives, and modern-day cloud storage.
+### 1. Philippine Computing History Map
 
-Selecting a storage technology reveals:
-- Historical background
-- Release year
-- Storage capacity
-- Physical dimensions
-- Advantages and limitations
-- Real-world applications
+An interactive timeline and map that allows visitors to explore significant milestones in the history of computing and technology in the Philippines.
 
-*This will provide historical context and establish the progression of storage technologies over time.*
+Visitors can drag a year slider spanning from the 1960s to the present day. As the timeline progresses, the map updates to reveal important locations, organizations, and technological developments that shaped the country's computing landscape.
 
-### 2. Interactive 3D Storage Device Models
-An interactive 3D exhibit that lets you examine the internal components of both historical and modern storage devices. 
+**Key Features:**
 
-**Supported Devices:**
-- Punch Card
-- Magnetic Tape Reel
-- Floppy Disk
-- Hard Disk Drive
-- Compact Disc
-- Solid State Drive
+* Interactive year slider
+* Dynamic map visualization
+* Clickable hotspots
+* Historical photographs and technological artifacts
+* Local innovation highlights
 
-*It helps visualize the physical mechanisms used to store information across different generations of technology.*
+Selecting a location reveals:
 
-### 3. Physical Size vs Capacity Visualization
-A game where users must store a given amount of data using technologies available in a selected decade.
+* Historical background
+* Associated organizations
+* Major technological contributions
+* Images and supporting materials
+* Relevant milestones from the selected period
 
-Example: Store **1 GB** of data into:
-- Punch Cards
-- Magnetic Tape
-- Floppy Disks
-- CDs
-- HDDs
+*This interactive element provides historical context while allowing visitors to visualize how computing technology expanded throughout the Philippines over time.*
 
-*The system visually displays how much physical space would be required. It will also demonstrate the relationship between storage capacity and physical size throughout computing history.*
+---
+
+### 2. Philippine Computing Knowledge Challenge
+
+A gamified quiz interface that tests visitors on the milestones, locations, organizations, and historical breakthroughs showcased throughout the exhibit.
+
+The quiz serves as a reinforcement activity that encourages visitors to engage with and retain information presented in the interactive map.
+
+**Quiz Features:**
+
+* Multiple-choice questions
+* True-or-false questions
+* Questions based on map locations and historical events
+* Coverage of multiple eras of Philippine computing history
+* Immediate feedback and explanations
+* Final score summary
+* Technology-themed achievement badges
+
+Sample topics include:
+
+* Early computing systems in the Philippines
+* PHNET and the first internet connection
+* Growth of internet access
+* Philippine IT industry milestones
+* Universities and government agencies involved in technology development
+
+*This interactive element promotes active learning and allows visitors to assess their understanding of Philippine computing history.*
 
 ---
 
 ## Tech Stack Plan
 
-| Technology | Purpose / Application |
-| :--- | :--- |
-| **Astro 6** | Main website framework and page routing |
-| **React** | Interactive exhibit components |
-| **MDX** | Exhibit content pages and historical content |
-| **Tailwind CSS** | Styling, layout design, and responsive design |
-| **Motion** | Timeline animations and smooth transitions |
-| **Blender** | Creation of 3D storage device models |
-| **React Three Fiber** | Rendering and interaction of 3D models within React |
-| **OrbitControls** | Camera controls for rotating and zooming 3D models |
-| **Chart.js** | Capacity comparison and data visualization graphs |
-| **Node.js 26** | Development environment |
-| **GitHub** | Version control and project documentation |
-| **GitHub Pages** | Website deployment and hosting |
+| Technology        | Purpose / Application                                                        |
+| :---------------- | :--------------------------------------------------------------------------- |
+| **Astro 6**       | Main website framework and page routing                                      |
+| **React**         | Interactive exhibit components                                               |
+| **MDX**           | Exhibit content pages and historical content                                 |
+| **Tailwind CSS**  | Styling, layout design, and responsive design                                |
+| **Motion**        | Timeline animations and smooth transitions                                   |
+| **Leaflet.js**    | Interactive map visualization of computing milestones across the Philippines |
+| **React-Leaflet** | React integration for Leaflet maps and map interactions                      |
+| **Node.js 26**    | Development environment                                                      |
+| **GitHub**        | Version control and project documentation                                    |
+| **GitHub Pages**  | Website deployment and hosting                                               |
 
 ---
-
-## Tentative Style Guide
-
-### Primary Color Palette
-
-| Color Variable | Hex Code | Purpose / Assignment |
-| :--- | :--- | :--- |
-| **Void Black** | `#050705` | Primary background |
-| **Dark Slate Gray** | `#2F4F4F` | Secondary background / sections |
-| **Soft Circuit Green** | `#00FF66` | Primary accent / highlights / active elements |
-| **Dim Data Green** | `#00CC55` | Hover states / secondary highlights |
-| **Motherboard Green** | `#007A33` | Borders / low-emphasis elements |
-| **Static Gray** | `#2A2F2B` | Dividers / disabled UI |
-| **White** | `#FFFFFF` | Main readable text |
-| **Gray** | `#D3D3D3` | Secondary descriptions |
-
-### Accent / Functional Colors
-
-| Color Variable | Hex Code | Purpose / Assignment |
-| :--- | :--- | :--- |
-| **Neon Green** | `#7CFF4D` | Success / Active State |
-| **Lime Green** | `#B7FF4A` | Warning / Legacy Data |
-| **Red Accent** | `#FF3B3B` | Error / Failed State |
-| **Cyan Tint** | `#4DFFD2` | Info Highlight |

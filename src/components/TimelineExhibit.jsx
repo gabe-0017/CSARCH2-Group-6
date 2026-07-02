@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { timeline } from "../data/timeline";
+import { timeline } from "../data/Timeline";
 import InfoPanel from "./InfoPanel";
 import MapPlaceholder from "./MapPlaceholder";
 

@@ -1,5 +1,6 @@
 ---
 import TimelineExhibit from "../components/TimelineExhibit.jsx";
+import Quiz from "../components/Quiz.jsx";
 import "../styles/global.css";
 ---
 
@@ -13,5 +14,19 @@ import "../styles/global.css";
 
   <body style="margin: 0; font-family: Arial, sans-serif;">
     <TimelineExhibit client:only="react" />
+
+     <!-- Quiz Section -->
+       <section class="mt-16">
+        <h2 class="text-4xl font-bold text-center mb-3">
+          Philippine Computing Knowledge Challenge
+        </h2>
+
+        <p class="text-center text-gray-600 mb-8">
+          Test your knowledge of Philippine computing history after exploring the interactive timeline.
+        </p>
+
+        <Quiz client:only="react" />
+      </section>
+  
   </body>
 </html>

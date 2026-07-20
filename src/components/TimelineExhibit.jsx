@@ -5,7 +5,7 @@ import PhilippineMap from "./PhilippineMap";
 // import MapPlaceholder from "./MapPlaceholder";
 
 export default function TimelineExhibit() {
-  const [selectedYear, setSelectedYear] = useState(1967);
+  const [selectedYear, setSelectedYear] = useState(1960);
   const [selectedEvent, setSelectedEvent] = useState(null);
 
   // Show all events up to the selected year
@@ -37,7 +37,7 @@ export default function TimelineExhibit() {
 
       <div className="mb-8">
         <div className="flex justify-between mb-2">
-          <span>1967</span>
+          <span>1960</span>
           <span className="font-semibold">
             Selected Year: {selectedYear}
           </span>
@@ -45,7 +45,7 @@ export default function TimelineExhibit() {
         </div>
         <input
           type="range"
-          min="1967"
+          min="1960"
           max="2025"
           value={selectedYear}
           onChange={(e) => handleYearChange(Number(e.target.value))}

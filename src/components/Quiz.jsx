@@ -40,21 +40,25 @@ export default function Quiz() {
 
   if (finished) {
     return (
-      <div className="max-w-xl mx-auto mt-10 p-6 border rounded-xl shadow-lg bg-white">
-        <h2 className="text-3xl font-bold mb-4">
-           Quiz Complete!
-        </h2>
+      <div
+        className="max-w-xl mx-auto mt-10 p-6 rounded-xl shadow-2xl border border-slate-700"
+        style={{
+          background: "linear-gradient(160deg, #1e293b 0%, #1e293b 60%, #1a2f4f 100%)",
+        }}
+      >
+        <h2 className="text-3xl font-bold mb-4 text-white">Quiz Complete!</h2>
 
-        <p className="text-xl mb-6">
+        <p className="text-xl mb-6 text-gray-300">
           Your Score:{" "}
-          <span className="font-bold">
+          <span className="font-bold" style={{ color: "#FCD116" }}>
             {score} / {questions.length}
           </span>
         </p>
 
         <button
           onClick={restartQuiz}
-          className="bg-cyan-600 text-white px-5 py-2 rounded-lg hover:bg-cyan-700 transition"
+          className="px-5 py-2 rounded-lg transition font-semibold"
+          style={{ backgroundColor: "#FCD116", color: "#0038A8" }}
         >
           Restart Quiz
         </button>
@@ -65,38 +69,31 @@ export default function Quiz() {
   const question = questions[current];
 
   return (
-    <div className="max-w-xl mx-auto mt-10 p-6 border rounded-xl shadow-lg bg-white">
-      <h2 className="text-3xl font-bold mb-2">
-        Philippine Computing Knowledge Challenge
-      </h2>
-
-      <p className="text-gray-600 mb-6">
-        Question {current + 1} of {questions.length}
-      </p>
-
-      <h3 className="text-xl font-semibold mb-6">
+    <div
+      className="max-w-xl mx-auto mt-10 p-6 rounded-xl shadow-2xl border border-slate-700"
+      style={{
+        background: "linear-gradient(160deg, #1e293b 0%, #1e293b 60%, #1a2f4f 100%)",
+      }}
+    >
+      <h3 className="text-xl font-semibold mb-6 text-white">
         {question.question}
       </h3>
 
       <div className="space-y-3">
         {question.options.map((option) => {
           let buttonStyle =
-            "w-full p-3 border rounded-lg text-left transition ";
+            "w-full p-3 rounded-lg text-left transition border ";
 
           if (showFeedback) {
             if (option === question.answer) {
-              buttonStyle +=
-                "bg-green-100 border-green-500";
+              buttonStyle += "bg-green-900/40 border-green-500 text-green-300";
             } else if (option === selectedAnswer) {
-              buttonStyle +=
-                "bg-red-100 border-red-500";
+              buttonStyle += "bg-red-900/40 border-red-500 text-red-300";
             } else {
-              buttonStyle +=
-                "bg-gray-100 border-gray-300";
+              buttonStyle += "bg-slate-800 border-slate-600 text-gray-400";
             }
           } else {
-            buttonStyle +=
-              "hover:bg-cyan-100 border-gray-300";
+            buttonStyle += "bg-slate-800 border-slate-600 text-gray-200 hover:border-yellow-400 hover:bg-slate-700";
           }
 
           return (
@@ -112,29 +109,30 @@ export default function Quiz() {
         })}
       </div>
 
+      <p className="text-gray-400 mb-6 mt-6">
+        Question {current + 1} of {questions.length}
+      </p>
+
       {showFeedback && (
-        <div className="mt-6 p-4 rounded-lg border bg-gray-50">
+        <div className="mt-6 p-4 rounded-lg border border-slate-600 bg-slate-800/60">
           {selectedAnswer === question.answer ? (
-            <p className="text-green-600 font-bold text-lg">
+            <p className="font-bold text-lg" style={{ color: "#4ade80" }}>
               Correct!
             </p>
           ) : (
-            <p className="text-red-600 font-bold text-lg">
+            <p className="font-bold text-lg" style={{ color: "#f87171" }}>
               Incorrect!
             </p>
           )}
 
-          <p className="mt-3 text-gray-700">
-            {question.explanation}
-          </p>
+          <p className="mt-3 text-gray-300">{question.explanation}</p>
 
           <button
             onClick={nextQuestion}
-            className="mt-5 bg-cyan-600 text-white px-5 py-2 rounded-lg hover:bg-cyan-700 transition"
+            className="mt-5 px-5 py-2 rounded-lg transition font-semibold"
+            style={{ backgroundColor: "#FCD116", color: "#0038A8" }}
           >
-            {current === questions.length - 1
-              ? "Finish Quiz"
-              : "Next Question"}
+            {current === questions.length - 1 ? "Finish Quiz" : "Next Question"}
           </button>
         </div>
       )}

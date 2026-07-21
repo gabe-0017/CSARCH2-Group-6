@@ -1,9 +1,10 @@
 import { useState } from "react";
 
-import { round3Questions } from "../../Data/QuizQuestions";
+import { round1Questions } from "../../data/QuizQuestions";
+
 import RoundComplete from "./RoundComplete";
 
-export default function Round3TrueFalse({
+export default function Round1TrueFalse({
   addPoints,
   saveAnswer,
   next,
@@ -14,7 +15,7 @@ export default function Round3TrueFalse({
   const [showFeedback, setShowFeedback] = useState(false);
   const [finished, setFinished] = useState(false);
 
-  const question = round3Questions[currentQuestion];
+  const question = round1Questions[currentQuestion];
 
   function handleAnswer(answer) {
     if (showFeedback) return;
@@ -28,25 +29,18 @@ export default function Round3TrueFalse({
   }
 
   function nextQuestion() {
-    const earnedPoints =
-      selectedAnswer === question.answer ? 2 : 0;
-
-    const totalScore = score + earnedPoints;
-
     saveAnswer({
       round: 3,
       question: question.question,
       selected: selectedAnswer,
       correct: selectedAnswer === question.answer,
     });
-
-    if (currentQuestion < round3Questions.length - 1) {
+    if (currentQuestion < round1Questions.length - 1) {
       setCurrentQuestion((prev) => prev + 1);
       setSelectedAnswer(null);
       setShowFeedback(false);
     } else {
-      setScore(totalScore);
-      addPoints(totalScore);
+      addPoints(score);
       setFinished(true);
     }
   }
@@ -54,13 +48,13 @@ export default function Round3TrueFalse({
   if (finished) {
     return (
       <RoundComplete
-        title="Round 3 — Fact Check"
-        currentRound={3}
+        title="Round 1 — Fact Check"
+        currentRound={1}
         totalRounds={5}
         pointsEarned={score}
         maxPoints={10}
         message="Great job! You separated the facts from the myths about Philippine computing history."
-        nextLabel="Continue to Round 4 →"
+        nextLabel="Continue to Round 2 →"
         next={next}
       />
     );
@@ -70,11 +64,11 @@ export default function Round3TrueFalse({
     <div className="max-w-3xl mx-auto bg-white rounded-xl shadow-lg p-8">
 
       <h1 className="text-4xl font-bold mb-2">
-        Round 3 — Fact Check
+        Round 1 — Fact Check
       </h1>
 
       <p className="text-gray-600 mb-6">
-        Question {currentQuestion + 1} of {round3Questions.length}
+        Question {currentQuestion + 1} of {round1Questions.length}
       </p>
 
       <h2 className="text-2xl font-semibold mb-8">
@@ -147,7 +141,7 @@ export default function Round3TrueFalse({
             onClick={nextQuestion}
             className="mt-6 bg-cyan-600 hover:bg-cyan-700 text-white px-6 py-3 rounded-lg"
           >
-            {currentQuestion === round3Questions.length - 1
+            {currentQuestion === round1Questions.length - 1
               ? "Finish Round"
               : "Next Question"}
           </button>

@@ -1,9 +1,9 @@
 import { useState } from "react";
 
 import Welcome from "./Quiz/Welcome";
-import Round1Timeline from "./Quiz/Round1Timeline";
+import Round1TrueFalse from "./Quiz/Round1TrueFalse";
 import Round2MCQ from "./Quiz/Round2MCQ";
-import Round3TrueFalse from "./Quiz/Round3TrueFalse";
+import Round3Timeline from "./Quiz/Round3Timeline";
 import Round4Matching from "./Quiz/Round4Matching";
 import Round5Years from "./Quiz/Round5Years";
 import Results from "./Quiz/Results";
@@ -23,9 +23,9 @@ export default function Quiz() {
 
   const rounds = [
     Welcome,
-    Round1Timeline,
+    Round1TrueFalse,
     Round2MCQ,
-    Round3TrueFalse,
+    Round3Timeline,
     Round4Matching,
     Round5Years,
     Results,

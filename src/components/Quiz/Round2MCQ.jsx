@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { round2Questions } from "../../Data/QuizQuestions";
 
+import { round2Questions } from "../../data/QuizQuestions";
 
 import RoundComplete from "./RoundComplete";
 
@@ -29,31 +29,19 @@ export default function Round2MCQ({
   }
 
   function nextQuestion() {
-
-    const earnedPoints =
-        selectedAnswer === question.answer ? 2 : 0;
-
-    const totalScore = score + earnedPoints;
-
     saveAnswer({
         round: 2,
         question: question.question,
         selected: selectedAnswer,
         correct: selectedAnswer === question.answer,
     });
-
     if (currentQuestion < round2Questions.length - 1) {
-
         setCurrentQuestion((prev) => prev + 1);
         setSelectedAnswer(null);
         setShowFeedback(false);
-
     } else {
-
-        addPoints(totalScore);
-        setScore(totalScore);
+        addPoints(score);
         setFinished(true);
-
     }
   }
 

@@ -1,6 +1,7 @@
 import { useState } from "react";
 
-import { round5Questions } from "../../Data/QuizQuestions";
+import { round5Questions } from "../../data/QuizQuestions";
+
 import RoundComplete from "./RoundComplete";
 
 export default function Round5Years({

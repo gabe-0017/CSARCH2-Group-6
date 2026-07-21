@@ -4,11 +4,11 @@ export default function Results({ score }) {
   let message = "";
 
   if (score >= 45) {
-    rank = "Master";
+    rank = "Digital Pioneer";
     message =
       "Outstanding! You have an excellent understanding of the history of computing in the Philippines.";
   } else if (score >= 35) {
-    rank = "Historian";
+    rank = "True Historian";
     message =
       "Great job! You know many of the important milestones in Philippine computing history.";
   } else if (score >= 25) {

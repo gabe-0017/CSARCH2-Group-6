@@ -1,7 +1,7 @@
 import { useState } from "react";
 
-import { round4Questions } from "../../Data/QuizQuestions";
-import { shuffleArray } from "../../Data/QuizUtils";
+import { round4Questions } from "../../data/QuizQuestions";
+import { shuffleArray } from "../../data/QuizUtils";
 
 import RoundComplete from "./RoundComplete";
 

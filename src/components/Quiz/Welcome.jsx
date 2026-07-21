@@ -2,26 +2,21 @@ export default function Welcome({ next }) {
   return (
     <div className="max-w-3xl mx-auto bg-white rounded-xl shadow-lg p-10 text-center">
 
-      <h1 className="text-5xl font-bold text-cyan-700 mb-4">
-        🇵🇭 Philippine Computing Museum
+      <h1 className="text-3xl font-bold text-cyan-700 mb-4">
+        Do you have what it takes to become a Digital Pioneer?
       </h1>
 
-      <h2 className="text-2xl font-semibold mb-8">
-        Who Wants to Be a Tech Pioneer?
-      </h2>
-
-      <p className="text-gray-700 mb-10 leading-relaxed">
-        You have explored the museum.
+      <p className="text-gray-700 mt-4 mb-4 leading-relaxed">
+        Now that you've explored the interactive museum, it's time to test your knowledge!
         <br />
-        Now test everything you've learned through
-        six interactive rounds.
+        The gauntlet consists of:
       </p>
 
       <div className="grid grid-cols-2 gap-5 mb-10">
 
         <div className="border rounded-xl p-5">
           <h3 className="font-bold text-xl">
-            6 Rounds!
+            5 Rounds!
           </h3>
 
           <p>

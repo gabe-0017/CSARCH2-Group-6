@@ -1,5 +1,32 @@
-// Round 2 - Museum Explorer
+// Round 1 - Fact Check
+export const round1Questions = [
+  {
+    question: "Batch processing handles transactions one group at a time.",
+    answer: true,
+  },
 
+  {
+    question: "The first Philippine cyber café opened in Davao City.",
+    answer: true,
+  },
+
+  {
+    question: "The Philippines first connected to the Internet in 1998.",
+    answer: false,
+  },
+
+  {
+    question: "The Electronic Commerce Act recognized digital signatures and electronic documents.",
+    answer: true,
+  },
+
+  {
+    question: "Project NOAH helps forecast floods and landslides.",
+    answer: true,
+  },
+];
+
+// Round 2 - Museum Explorer
 export const round2Questions = [
   {
     eventId: "ibm650",
@@ -40,9 +67,9 @@ export const round2Questions = [
       "Which university established the UP Computer Center in 1968?",
 
     options: [
-      "University of the Philippines Diliman",
-      "Ateneo de Manila University",
       "University of Santo Tomas",
+      "Ateneo de Manila University",
+      "University of the Philippines Diliman",
       "De La Salle University",
     ],
 
@@ -74,10 +101,10 @@ export const round2Questions = [
       "Which law officially recognized electronic documents and digital signatures?",
 
     options: [
-      "Electronic Commerce Act",
+      "Public Telecommunications Act",
       "Data Privacy Act",
       "Cybercrime Prevention Act",
-      "Public Telecommunications Act",
+      "Electronic Commerce Act",
     ],
 
     answer:
@@ -85,33 +112,7 @@ export const round2Questions = [
   },
 ];
 
-export const round3Questions = [
-  {
-    question: "Batch processing handles transactions one group at a time.",
-    answer: true,
-  },
-
-  {
-    question: "The first Philippine cyber café opened in Davao City.",
-    answer: true,
-  },
-
-  {
-    question: "The Philippines first connected to the Internet in 1998.",
-    answer: false,
-  },
-
-  {
-    question: "The Electronic Commerce Act recognized digital signatures and electronic documents.",
-    answer: true,
-  },
-
-  {
-    question: "Project NOAH helps forecast floods and landslides.",
-    answer: true,
-  },
-];
-
+// Round 4 - Match the Innovation
 export const round4Questions = [
   {
     left: "IBM 650",
@@ -120,7 +121,7 @@ export const round4Questions = [
       "SMS money transfer",
       "Disaster forecasting",
       "Worldwide malware incident",
-      "Electronic Commerce Act",
+      "Recognized digital signatures and e-documents",
     ],
     answer: "First computer in the Philippines",
   },
@@ -132,7 +133,7 @@ export const round4Questions = [
       "SMS money transfer",
       "Disaster forecasting",
       "Worldwide malware incident",
-      "Electronic Commerce Act",
+      "Recognized digital signatures and e-documents",
     ],
     answer: "SMS money transfer",
   },
@@ -144,7 +145,7 @@ export const round4Questions = [
       "SMS money transfer",
       "Disaster forecasting",
       "Worldwide malware incident",
-      "Electronic Commerce Act",
+      "Recognized digital signatures and e-documents",
     ],
     answer: "Disaster forecasting",
   },
@@ -156,7 +157,7 @@ export const round4Questions = [
       "SMS money transfer",
       "Disaster forecasting",
       "Worldwide malware incident",
-      "Electronic Commerce Act",
+      "Recognized digital signatures and e-documents",
     ],
     answer: "Worldwide malware incident",
   },
@@ -168,12 +169,13 @@ export const round4Questions = [
       "SMS money transfer",
       "Disaster forecasting",
       "Worldwide malware incident",
-      "Electronic Commerce Act",
+      "Recognized digital signatures and e-documents",
     ],
-    answer: "Electronic Commerce Act",
+    answer: "Recognized digital signatures and e-documents",
   },
 ];
 
+// Round 5 - Time Traveler
 export const round5Questions = [
   {
     event: "The First Computer Arrives in the Philippines",

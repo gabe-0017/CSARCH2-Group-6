@@ -1,11 +1,11 @@
 import { useState } from "react";
 
-import { timeline } from "../../Data/Timeline";
-import { shuffleArray } from "../../Data/QuizUtils";
+import { timeline } from "../../data/Timeline";
+import { shuffleArray } from "../../data/QuizUtils";
 
 import RoundComplete from "./RoundComplete";
 
-export default function Round1Timeline({
+export default function Round3Timeline({
   addPoints,
   saveAnswer,
   next,
@@ -84,13 +84,13 @@ export default function Round1Timeline({
   if (checked) {
     return (
       <RoundComplete
-        title="Round 1 — Time Traveler"
-        currentRound={1}
+        title="Round 3 — Time Traveler"
+        currentRound={3}
         totalRounds={5}
         pointsEarned={correctCount * 2}
         maxPoints={10}
         message={`You correctly arranged ${correctCount} out of ${roundEvents.length} events.`}
-        nextLabel="Continue to Round 2 →"
+        nextLabel="Continue to Round 4 →"
         next={next}
       />
     );
@@ -100,7 +100,7 @@ export default function Round1Timeline({
     <div className="max-w-4xl mx-auto bg-white rounded-xl shadow-lg p-8">
 
       <h1 className="text-4xl font-bold mb-3">
-        Round 1 — Time Traveler
+        Round 3 — Time Traveler
       </h1>
 
       <p className="text-gray-600 mb-8">

@@ -1,0 +1,38 @@
+---
+import Quiz from "../components/Quiz.jsx";
+import "../styles/global.css";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Philippine Computing Knowledge Challenge</title>
+  </head>
+
+  <body>
+
+    <div class="max-w-6xl mx-auto px-6 py-10">
+
+      <a
+        href="/CSARCH2-Group-6/"
+        class="inline-block mb-8 text-cyan-300 hover:text-white transition"
+      >
+        ← Return to Interactive Museum
+      </a>
+
+      <h1 class="text-5xl font-bold text-center text-white mb-4">
+        🧠 Philippine Computing Knowledge Challenge
+      </h1>
+
+      <p class="text-center text-gray-300 mb-10">
+        You've explored the interactive museum. Now it's time to test your knowledge!
+      </p>
+
+      <Quiz client:only="react" />
+
+    </div>
+
+  </body>
+</html>

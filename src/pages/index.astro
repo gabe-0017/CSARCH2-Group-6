@@ -1,6 +1,5 @@
 ---
 import TimelineExhibit from "../components/TimelineExhibit.jsx";
-import Quiz from "../components/Quiz.jsx";
 import "../styles/global.css";
 ---
 
@@ -18,18 +17,26 @@ import "../styles/global.css";
   <body>
     <TimelineExhibit client:only="react" />
 
-      <!-- Quiz Section -->
-      <section class="mt-16 pb-8">
-        <h2 class="text-4xl font-bold text-center mb-3 text-white">
-          Philippine Computing Knowledge Challenge
-        </h2>
+    <section class="text-center py-16">
 
-        <p class="text-center text-gray-300 mb-8">
-          Test your knowledge of Philippine computing history after exploring the interactive timeline.
-        </p>
+      <h2 class="text-4xl font-bold text-white mb-4">
+        Ready for the Museum Challenge?
+      </h2>
 
-        <Quiz client:only="react" />
-      </section>
+      <p class="text-gray-300 mb-8 text-lg">
+        Explore the interactive timeline first, then see how much you've learned!
+      </p>
+
+      <a
+        href="/CSARCH2-Group-6/quiz"
+        class="inline-block bg-cyan-600 hover:bg-cyan-700 text-white px-8 py-4 rounded-xl text-xl font-semibold transition shadow-lg"
+      >
+        🧠 Take the Museum Challenge
+      </a>
+
+    </section>
+
+      
   
   </body>
 </html>

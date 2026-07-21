@@ -1,5 +1,6 @@
 export const timeline = [
   {
+    id: "ibm650",
     year: 1960,
     title: "The First Computer Arrives in the Philippines",
     description:
@@ -9,6 +10,7 @@ export const timeline = [
     lng: 120.9842,
   },
   {
+    id: "philamlife",
     year: 1962,
     title: "Private Sector Computing Begins",
     description:
@@ -18,6 +20,7 @@ export const timeline = [
     lng: 120.9842,
   },
   {
+    id: "commercial-bank",
     year: 1965,
     title: "Banks Begin Computerizing Transactions",
     description:
@@ -27,6 +30,7 @@ export const timeline = [
     lng: 120.9842,
   },
   {
+    id: "pnb-online-banking",
     year: 1966,
     title: "Online Banking and Mainframe Adoption Expand",
     description:
@@ -36,6 +40,7 @@ export const timeline = [
     lng: 120.9842,
   },
   {
+    id: "up-computer-center",
     year: 1968,
     title: "University of the Philippines Computer Center Opens",
     description:
@@ -45,6 +50,7 @@ export const timeline = [
     lng: 121.0684,
   },
   {
+    id: "national-computer-center",
     year: 1971,
     title: "The National Computer Center Is Established",
     description:
@@ -54,6 +60,7 @@ export const timeline = [
     lng: 120.9842,
   },
   {
+    id: "system370",
     year: 1973,
     title: "Industrial Mainframe Computing Grows",
     description:
@@ -63,6 +70,7 @@ export const timeline = [
     lng: 120.9842,
   },
   {
+    id: "ibm-pc",
     year: 1985,
     title: "The Personal Computer Reaches the Philippines",
     description:
@@ -72,6 +80,7 @@ export const timeline = [
     lng: 121.0244,
   },
   {
+    id: "ps2-as400",
     year: 1988,
     title: "IBM Launches the PS/2 and AS/400",
     description:
@@ -81,6 +90,7 @@ export const timeline = [
     lng: 120.9842,
   },
   {
+    id: "email-network",
     year: 1993,
     title: "Local Universities Build the First Email Network",
     description:
@@ -90,6 +100,7 @@ export const timeline = [
     lng: 121.0223,
   },
   {
+    id: "philnet",
     year: 1994,
     title: "The Philippines Gets Its First Internet Connection",
     description:
@@ -99,6 +110,7 @@ export const timeline = [
     lng: 121.0684,
   },
   {
+    id: "telecom-deregulation",
     year: 1995,
     title: "Telecom Deregulation Opens the Door for ISPs",
     description:
@@ -108,6 +120,7 @@ export const timeline = [
     lng: 125.4553,
   },
   {
+    id: "isp-boom",
     year: 1996,
     title: "The Internet Service Provider Boom",
     description:
@@ -117,6 +130,7 @@ export const timeline = [
     lng: 120.9842,
   },
   {
+    id: "phix",
     year: 1997,
     title: "National Internet Infrastructure Expands",
     description:
@@ -126,6 +140,7 @@ export const timeline = [
     lng: 120.9842,
   },
   {
+    id: "rpweb",
     year: 1998,
     title: "RPWeb Initiative Signed Into Law",
     description:
@@ -135,6 +150,7 @@ export const timeline = [
     lng: 120.9936,
   },
   {
+    id: "unionbank-online",
     year: 1999,
     title: "Internet Banking Gains Momentum",
     description:
@@ -144,6 +160,7 @@ export const timeline = [
     lng: 120.9842,
   },
   {
+    id: "ecommerce-act",
     year: 2000,
     title: "E-Commerce Law Passed Amid the Love Bug Outbreak",
     description:
@@ -153,6 +170,7 @@ export const timeline = [
     lng: 120.9842,
   },
   {
+    id: "edsa-sms",
     year: 2001,
     title: "SMS Fuels the EDSA II Uprising",
     description:
@@ -162,6 +180,7 @@ export const timeline = [
     lng: 121.0473,
   },
   {
+    id: "bpap",
     year: 2004,
     title: "The IT-BPM Industry Takes Shape",
     description:
@@ -171,6 +190,7 @@ export const timeline = [
     lng: 120.9842,
   },
   {
+    id: "globe-3g",
     year: 2006,
     title: "Mobile Internet Goes 3G",
     description:
@@ -180,6 +200,7 @@ export const timeline = [
     lng: 120.9842,
   },
   {
+    id: "gcash-app",
     year: 2012,
     title: "GCash Launches Its Mobile App",
     description:
@@ -189,6 +210,7 @@ export const timeline = [
     lng: 120.9842,
   },
   {
+    id: "project-noah",
     year: 2013,
     title: "Project NOAH Strengthens Disaster Forecasting",
     description:
@@ -198,6 +220,7 @@ export const timeline = [
     lng: 121.0684,
   },
   {
+    id: "tech-startups",
     year: 2015,
     title: "Filipino Tech Startups Expand Rapidly",
     description:
@@ -207,6 +230,7 @@ export const timeline = [
     lng: 120.9842,
   },
   {
+    id: "icpc-2025",
     year: 2025,
     title: "Ateneo Hosts the ICPC Asia-Manila Regionals",
     description:
